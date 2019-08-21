@@ -9,18 +9,23 @@
 #ifndef FaceUnityPlugin_h
 #define FaceUnityPlugin_h
 
-#include "IVideoFramePlugin.h"
+#include "IAVFramePlugin.h"
 #include <string>
 #include "FUConfig.h"
 
 
-class FaceUnityPlugin : public IVideoFramePlugin
+class FaceUnityPlugin : public IAVFramePlugin
 {
 public:
     FaceUnityPlugin();
     ~FaceUnityPlugin();
     virtual bool onPluginCaptureVideoFrame(VideoPluginFrame* videoFrame) override;
     virtual bool onPluginRenderVideoFrame(unsigned int uid, VideoPluginFrame* videoFrame) override;
+    
+    virtual bool onPluginRecordAudioFrame(AudioPluginFrame* audioFrame) override;
+    virtual bool onPluginPlaybackAudioFrame(AudioPluginFrame* audioFrame) override;
+    virtual bool onPluginMixedAudioFrame(AudioPluginFrame* audioFrame) override;
+    virtual bool onPluginPlaybackAudioFrameBeforeMixing(unsigned int uid, AudioPluginFrame* audioFrame) override;
     
     virtual bool load(const char* path) override;
     virtual bool unLoad() override;

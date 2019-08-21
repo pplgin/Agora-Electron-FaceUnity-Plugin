@@ -140,6 +140,26 @@ bool FaceUnityPlugin::onPluginRenderVideoFrame(unsigned int uid, VideoPluginFram
     return true;
 }
 
+bool FaceUnityPlugin::onPluginRecordAudioFrame(AudioPluginFrame *audioFrame)
+{
+    return true;
+}
+
+bool FaceUnityPlugin::onPluginPlaybackAudioFrame(AudioPluginFrame *audioFrame)
+{
+    return true;
+}
+
+bool FaceUnityPlugin::onPluginMixedAudioFrame(AudioPluginFrame *audioFrame)
+{
+    return true;
+}
+
+bool FaceUnityPlugin::onPluginPlaybackAudioFrameBeforeMixing(unsigned int uid, AudioPluginFrame *audioFrame)
+{
+    return true;
+}
+
 bool FaceUnityPlugin::onPluginCaptureVideoFrame(VideoPluginFrame *videoFrame)
 {
     if(auth_package_size == 0){
@@ -450,7 +470,7 @@ void FaceUnityPlugin::release()
     folderPath = "";
 }
 
-IVideoFramePlugin* createVideoFramePlugin()
+IAVFramePlugin* createAVFramePlugin()
 {
     return new FaceUnityPlugin();
 }

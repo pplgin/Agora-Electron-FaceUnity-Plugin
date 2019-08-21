@@ -10,7 +10,7 @@
 		0315A29122F9B69200B10F6C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03858EB122F9B5FA000B3983 /* AVFoundation.framework */; };
 		033C828722FDAFB300ABB9EE /* FaceUnityPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 033C828522FDAFB200ABB9EE /* FaceUnityPlugin.h */; };
 		033C828822FDAFB300ABB9EE /* FaceUnityPlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 033C828622FDAFB300ABB9EE /* FaceUnityPlugin.cpp */; };
-		033C828A22FDAFC000ABB9EE /* IVideoFramePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 033C828922FDAFC000ABB9EE /* IVideoFramePlugin.h */; };
+		033C828A22FDAFC000ABB9EE /* IAVFramePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 033C828922FDAFC000ABB9EE /* IAVFramePlugin.h */; };
 		033C829322FDB14C00ABB9EE /* libnama.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 033C829222FDB14C00ABB9EE /* libnama.a */; };
 		033C829422FDB18F00ABB9EE /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 033C828E22FDAFC900ABB9EE /* Utils.cpp */; };
 		03858EB022F9AE14000B3983 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03858EAF22F9AE14000B3983 /* OpenGL.framework */; };
@@ -24,7 +24,7 @@
 /* Begin PBXFileReference section */
 		033C828522FDAFB200ABB9EE /* FaceUnityPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FaceUnityPlugin.h; path = ../FaceUnityPlugin.h; sourceTree = "<group>"; };
 		033C828622FDAFB300ABB9EE /* FaceUnityPlugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FaceUnityPlugin.cpp; path = ../FaceUnityPlugin.cpp; sourceTree = "<group>"; };
-		033C828922FDAFC000ABB9EE /* IVideoFramePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IVideoFramePlugin.h; path = ../IVideoFramePlugin.h; sourceTree = "<group>"; };
+		033C828922FDAFC000ABB9EE /* IAVFramePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAVFramePlugin.h; path = ../IAVFramePlugin.h; sourceTree = "<group>"; };
 		033C828C22FDAFC900ABB9EE /* FUConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUConfig.h; sourceTree = "<group>"; };
 		033C828D22FDAFC900ABB9EE /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		033C828E22FDAFC900ABB9EE /* Utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
@@ -190,7 +190,7 @@
 			children = (
 				033C828622FDAFB300ABB9EE /* FaceUnityPlugin.cpp */,
 				033C828522FDAFB200ABB9EE /* FaceUnityPlugin.h */,
-				033C828922FDAFC000ABB9EE /* IVideoFramePlugin.h */,
+				033C828922FDAFC000ABB9EE /* IAVFramePlugin.h */,
 				033C829222FDB14C00ABB9EE /* libnama.a */,
 				033C828B22FDAFC900ABB9EE /* common */,
 				03D53AD122F98E4F0064D073 /* Products */,
@@ -214,7 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				033C828722FDAFB300ABB9EE /* FaceUnityPlugin.h in Headers */,
-				033C828A22FDAFC000ABB9EE /* IVideoFramePlugin.h in Headers */,
+				033C828A22FDAFC000ABB9EE /* IAVFramePlugin.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
